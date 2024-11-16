@@ -4,5 +4,50 @@
 
 :root {
     background-color: #111111;
+    --font-scale: 1.333;
+    --font-base: 16px;
+    --fs-h1: calc(var(--font-base) * var(--font-scale) * var(--font-scale) * var(--font-scale) * var(--font-scale) * var(--font-scale) * var(--font-scale));
+    --fs-h2: calc(var(--font-base) * var(--font-scale) * var(--font-scale) * var(--font-scale) * var(--font-scale) * var(--font-scale));
+    --fs-h3: calc(var(--font-base) * var(--font-scale) * var(--font-scale) * var(--font-scale) * var(--font-scale));
+    --fs-h4: calc(var(--font-base) * var(--font-scale) * var(--font-scale) * var(--font-scale));
+    --fs-h5: calc(var(--font-base) * var(--font-scale) * var(--font-scale));
+    --fs-h6: calc(var(--font-base) * var(--font-scale));
+    --fs-p: var(--font-base);
+}
+
+
+
+h1 {
+    font-size: var(--fs-h1);
+    font-weight: bold;
+}
+
+h2 {
+    font-size: var(--fs-h2);
+    font-weight: bold;
+}
+
+h3 {
+    font-size: var(--fs-h3);
+    font-weight: bold;
+}
+
+h4 {
+    font-size: var(--fs-h4);
+    font-weight: bold;
+}
+
+h5 {
+    font-size: var(--fs-h5);
+    font-weight: bold;
+}
+
+h6 {
+    font-size: var(--fs-h6);
+    font-weight: bold;
+}
+
+p {
+    font-size: var(--font-base);
 }
 
