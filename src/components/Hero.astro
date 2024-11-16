@@ -1,0 +1,28 @@
+---
+import { Image } from 'astro:assets';
+import corgi from '../assets/corgi.jpg';
+---
+
+<section>
+    <div class="hero">
+        <div class="image">
+            <Image src={corgi} alt="Corgi" />
+        </div>
+    </div>
+</section>
+
+<style>
+    .hero {
+        height: 66svh;
+        background-color: #000000;
+    }
+    .image {
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+</style>
